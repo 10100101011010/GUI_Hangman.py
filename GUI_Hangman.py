@@ -1,5 +1,4 @@
 import tkinter as tk
-from tkinter import messagebox
 import random
 
 WORDS = [
@@ -415,10 +414,6 @@ class HangmanGame:
         letter = event.char.upper()
         if letter in self.letter_buttons and self.letter_buttons[letter]['state'] == 'normal':
             self.guess_letter(letter)
-
-    def show_about(self):
-        messagebox.showinfo(
-            "About", "Hangman Game\nDeveloped using Tkinter in Python.")
 
 
 class HoverableButton:
